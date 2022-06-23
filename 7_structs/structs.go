@@ -42,10 +42,10 @@ func main() {
 
 	// Different ways to assign structures.
 
-	point5 := Point{1, 2} // has type Vertex
+	point5 := Point{1, 2} // has type Point
 	point6 := Point{X: 1} // Y:0 is implicit
 	point7 := Point{}     // X:0 and Y:0
-	p2 := &Point{1, 2}    // has type *Vertex
+	p2 := &Point{1, 2}    // has type *Point
 
 	fmt.Println("point5:", point5)
 	fmt.Println("point6:", point6)
