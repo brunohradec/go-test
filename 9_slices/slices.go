@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 /*
 	An array has a fixed size. A slice, on the other hand, is a dynamically-sized,
@@ -93,4 +96,54 @@ func main() {
 
 	fmt.Println("slice8:", slice8)
 	fmt.Println("slice8 == nil:", slice8 == nil)
+
+	/*
+		Slices can be created with the built-in make function.
+		This is how you create dynamically-sized arrays.
+	*/
+
+	slice9 := make([]int, 10)
+	var slice10 []int = make([]int, 5)
+
+	fmt.Println("SLices with make:")
+	fmt.Println("slice9:", slice9)
+	fmt.Println("slice10:", slice10)
+
+	// Slices can contain any type, including other slices.
+	board := [][]string{
+		[]string{"_", "_", "_"},
+		[]string{"_", "_", "_"},
+		[]string{"_", "_", "_"},
+	}
+
+	board[0][0] = "X"
+	board[2][2] = "O"
+	board[1][2] = "X"
+	board[1][0] = "O"
+	board[0][2] = "X"
+
+	for i := 0; i < len(board); i++ {
+		fmt.Printf("%s\n", strings.Join(board[i], " "))
+	}
+
+	// Slices can also be appended to.
+
+	var slice11 []int
+	slice11 = append(slice11, 1)
+
+	fmt.Println("slice11:", slice11)
+
+	// Slices and other iterables can be iterated on using for loop
+
+	slice12 := []int{3, 1, 5, 3, 4, 8, 6, 10, 8, 9}
+
+	fmt.Println("Slice iteration:")
+	for i, v := range slice12 {
+		fmt.Printf("index: %v, value: %v.\n", i, v)
+	}
+
+	fmt.Println("Slice iteration without index:")
+	for _, v := range slice12 {
+		fmt.Println(v)
+	}
 }
