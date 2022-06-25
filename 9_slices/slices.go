@@ -139,7 +139,7 @@ func main() {
 
 	fmt.Println("Slice iteration:")
 	for i, v := range slice12 {
-		fmt.Printf("index: %v, value: %v.\n", i, v)
+		fmt.Printf("index: %v, value: %v\n", i, v)
 	}
 
 	fmt.Println("Slice iteration without index:")

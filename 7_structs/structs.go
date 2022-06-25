@@ -50,5 +50,5 @@ func main() {
 	fmt.Println("point5:", point5)
 	fmt.Println("point6:", point6)
 	fmt.Println("point7:", point7)
-	fmt.Printf("p2: type: %T, value: %p, dereferenced value: %v.\n", p2, p2, *p2)
+	fmt.Printf("p2: type: %T, value: %p, dereferenced value: %v\n", p2, p2, *p2)
 }

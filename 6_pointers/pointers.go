@@ -15,7 +15,7 @@ func main() {
 	var i1 int = 40
 	var p1 *int = &i1
 
-	fmt.Printf("p1: type %T, value of p1 %v, dereferenced value: %v.\n", p1, p1, *p1)
+	fmt.Printf("p1: type %T, value of p1 %v, dereferenced value: %v\n", p1, p1, *p1)
 
 	// Short assignement can also be used like with any other variable.
 	i, j := 42, 2701

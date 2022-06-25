@@ -88,11 +88,11 @@ func main() {
 
 	switch realOS := runtime.GOOS; realOS {
 	case "darwin":
-		fmt.Println("mac OS.")
+		fmt.Println("mac OS")
 	case "linux":
-		fmt.Println("Linux.")
+		fmt.Println("Linux")
 	default:
-		fmt.Printf("%s.\n", os)
+		fmt.Printf("%s\n", os)
 	}
 
 	// Switch does7nt have to have a condition.
@@ -100,11 +100,11 @@ func main() {
 	t := time.Now()
 	switch {
 	case t.Hour() < 12:
-		fmt.Println("Good morning!")
+		fmt.Println("Good morning")
 	case t.Hour() < 17:
-		fmt.Println("Good afternoon.")
+		fmt.Println("Good afternoon")
 	default:
-		fmt.Println("Good evening.")
+		fmt.Println("Good evening")
 	}
 
 	/*

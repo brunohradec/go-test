@@ -52,9 +52,9 @@ func main() {
 	// Multiple variable initialization.
 	var multipleVar1, multipleVar2, multipleVar3 = 10, "hello", true
 
-	fmt.Printf("multipleVar1: type: %T value: %v.\n", multipleVar1, multipleVar1)
-	fmt.Printf("multipleVar2: type: %T value: %v.\n", multipleVar2, multipleVar2)
-	fmt.Printf("multipleVar3: type: %T value: %v.\n", multipleVar3, multipleVar3)
+	fmt.Printf("multipleVar1: type: %T value: %v\n", multipleVar1, multipleVar1)
+	fmt.Printf("multipleVar2: type: %T value: %v\n", multipleVar2, multipleVar2)
+	fmt.Printf("multipleVar3: type: %T value: %v\n", multipleVar3, multipleVar3)
 
 	// Variable initialization can also be factored like imports.
 	var (
@@ -63,15 +63,15 @@ func main() {
 		multipleVar6 complex128 = 10 * 11i
 	)
 
-	fmt.Printf("multipleVar4: type: %T value: %v.\n", multipleVar4, multipleVar4)
-	fmt.Printf("multipleVar5: type: %T value: %v.\n", multipleVar5, multipleVar5)
-	fmt.Printf("multipleVar6: type: %T value: %v.\n", multipleVar6, multipleVar6)
+	fmt.Printf("multipleVar4: type: %T value: %v\n", multipleVar4, multipleVar4)
+	fmt.Printf("multipleVar5: type: %T value: %v\n", multipleVar5, multipleVar5)
+	fmt.Printf("multipleVar6: type: %T value: %v\n", multipleVar6, multipleVar6)
 
 	// Multiple variables can also be assigned with short assignment:
 	multipleVar7, multipleVar8 := true, "abc"
 
-	fmt.Printf("multipleVar7: type: %T value: %v.\n", multipleVar7, multipleVar7)
-	fmt.Printf("multipleVar8: type: %T value: %v.\n", multipleVar8, multipleVar8)
+	fmt.Printf("multipleVar7: type: %T value: %v\n", multipleVar7, multipleVar7)
+	fmt.Printf("multipleVar8: type: %T value: %v\n", multipleVar8, multipleVar8)
 
 	// Values can be converted between compatible types.
 	var someInteger1 int = 42
